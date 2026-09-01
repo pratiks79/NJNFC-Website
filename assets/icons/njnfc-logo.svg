@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0A0F1D" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="crimsonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D5A" />
+      <stop offset="50%" stop-color="#E63946" />
+      <stop offset="100%" stop-color="#9B111E" />
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Shield Outer Border -->
+  <path d="M 250 20 C 370 20 440 60 440 180 C 440 330 330 430 250 480 C 170 430 60 330 60 180 C 60 60 130 20 250 20 Z" 
+        fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="10" filter="url(#shadow)" />
+
+  <!-- Shield Inner Crimson Border Accent -->
+  <path d="M 250 36 C 354 36 418 72 418 180 C 418 316 320 408 250 454 C 180 408 82 316 82 180 C 82 72 146 36 250 36 Z" 
+        fill="none" stroke="url(#crimsonGrad)" stroke-width="4" stroke-dasharray="6,4" opacity="0.8" />
+
+  <!-- Mountain Silhouettes in Background (Himalayan / High Peak Pride) -->
+  <path d="M 120 240 L 190 140 L 250 200 L 310 120 L 380 240 Z" fill="#334155" opacity="0.6" />
+  <path d="M 160 240 L 220 165 L 250 200 L 280 150 L 340 240 Z" fill="#475569" opacity="0.8" />
+  <polygon points="190,140 205,160 180,165" fill="#FFFFFF" opacity="0.9" />
+  <polygon points="310,120 325,145 300,150" fill="#FFFFFF" opacity="0.9" />
+
+  <!-- Sun Emblem (Nepali flag sun inspiration) -->
+  <circle cx="250" cy="115" r="24" fill="url(#goldGrad)" />
+  <g stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round">
+    <line x1="250" y1="80" x2="250" y2="86" />
+    <line x1="250" y1="144" x2="250" y2="150" />
+    <line x1="215" y1="115" x2="221" y2="115" />
+    <line x1="279" y1="115" x2="285" y2="115" />
+    <line x1="225" y1="90" x2="230" y2="95" />
+    <line x1="275" y1="140" x2="270" y2="135" />
+    <line x1="225" y1="140" x2="230" y2="135" />
+    <line x1="275" y1="90" x2="270" y2="95" />
+  </g>
+
+  <!-- Soccer Ball Center Piece -->
+  <g transform="translate(250, 260)">
+    <circle cx="0" cy="0" r="72" fill="#F8FAFC" stroke="url(#goldGrad)" stroke-width="5" />
+    <!-- Soccer Pentagons -->
+    <polygon points="0,-24 23,-7 14,20 -14,20 -23,-7" fill="#0F172A" />
+    <!-- Outer seams -->
+    <line x1="0" y1="-24" x2="0" y2="-52" stroke="#0F172A" stroke-width="3" />
+    <line x1="23" y1="-7" x2="50" y2="-18" stroke="#0F172A" stroke-width="3" />
+    <line x1="14" y1="20" x2="35" y2="48" stroke="#0F172A" stroke-width="3" />
+    <line x1="-14" y1="20" x2="-35" y2="48" stroke="#0F172A" stroke-width="3" />
+    <line x1="-23" y1="-7" x2="-50" y2="-18" stroke="#0F172A" stroke-width="3" />
+    <!-- Outer patch links -->
+    <path d="M 0,-52 L -34,-40 M 0,-52 L 34,-40 M 50,-18 L 56,18 M 35,48 L 0,62 M -35,48 L 0,62 M -50,-18 L -56,18" stroke="#0F172A" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- Golden Stars Banner -->
+  <g fill="url(#goldGrad)">
+    <path d="M 140 68 L 143 76 L 151 77 L 145 82 L 147 90 L 140 85 L 133 90 L 135 82 L 129 77 L 137 76 Z" />
+    <path d="M 185 52 L 188 60 L 196 61 L 190 66 L 192 74 L 185 69 L 178 74 L 180 66 L 174 61 L 182 60 Z" />
+    <path d="M 250 42 L 253 50 L 261 51 L 255 56 L 257 64 L 250 59 L 243 64 L 245 56 L 239 51 L 247 50 Z" />
+    <path d="M 315 52 L 318 60 L 326 61 L 320 66 L 322 74 L 315 69 L 308 74 L 310 66 L 304 61 L 312 60 Z" />
+    <path d="M 360 68 L 363 76 L 371 77 L 365 82 L 367 90 L 360 85 L 353 90 L 355 82 L 349 77 L 357 76 Z" />
+  </g>
+
+  <!-- Ribbon for NJNFC -->
+  <path d="M 90 350 L 250 375 L 410 350 L 390 405 L 250 435 L 110 405 Z" fill="url(#crimsonGrad)" stroke="url(#goldGrad)" stroke-width="3" filter="url(#shadow)"/>
+  
+  <!-- Text on Ribbon -->
+  <text x="250" y="398" font-family="'Outfit', 'Segoe UI', sans-serif" font-weight="900" font-size="38" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">
+    NJNFC
+  </text>
+
+  <!-- Subtitle -->
+  <text x="250" y="462" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="14" fill="#F8FAFC" text-anchor="middle" letter-spacing="2">
+    NEW JERSEY • EST. 2024
+  </text>
+</svg>

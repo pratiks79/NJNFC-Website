@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leagues & Teams | NJNFC - Championships, Rosters & Standings</title>
+  <meta name="description" content="Explore NJNFC's Spring League 2025 standings, team rosters, Fall Championship results, and the Championship Hall of Fame.">
+  <link rel="icon" type="image/png" href="assets/icons/njnfc-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section-padding" style="padding-top: 5rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i data-lucide="award" style="width: 14px; height: 14px;"></i>
+            <span>Tournaments & Leagues</span>
+          </div>
+          <h1 class="section-title">Championships, Rosters & Live Standings</h1>
+          <p class="section-subtitle">
+            Explore active league tables, team rosters, captain rosters, upcoming matchday fixtures, and our championship Hall of Fame.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding bg-secondary-theme">
+      <div class="container">
+        <!-- Hub Tabs -->
+        <div class="hub-tabs-container">
+          <button class="hub-tab-btn active" data-tab="spring2025">
+            <i data-lucide="zap" style="width: 16px; height: 16px;"></i> Spring League 2025
+          </button>
+          <button class="hub-tab-btn" data-tab="fallChampionship">
+            <i data-lucide="flame" style="width: 16px; height: 16px;"></i> Fall Championship
+          </button>
+          <button class="hub-tab-btn" data-tab="hallOfFame">
+            <i data-lucide="crown" style="width: 16px; height: 16px;"></i> Hall of Fame & Winners
+          </button>
+        </div>
+
+        <!-- Tab 1: Spring League 2025 -->
+        <div class="hub-content-panel active" id="tab-spring2025">
+          <div class="league-overview-card">
+            <div class="league-info-bar">
+              <div>
+                <h2 style="font-size: 1.5rem; margin-bottom: 0.25rem;">NJNFC Spring League 2025</h2>
+                <span class="league-dates">
+                  <i data-lucide="calendar" style="width: 14px; height: 14px;"></i> April 5 to May 31, 2025 • Oak Ridge & Ponderosa
+                </span>
+              </div>
+              <button class="btn btn-primary" onclick="openRegistrationModal('player')">
+                <i data-lucide="plus-circle" style="width: 16px; height: 16px;"></i> Join Free Agent Pool
+              </button>
+            </div>
+
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--accent-gold);">Live League Standings</h3>
+            <div class="table-responsive">
+              <table class="league-table">
+                <thead>
+                  <tr>
+                    <th>Rank / Team</th>
+                    <th>Captain</th>
+                    <th>P</th><th>W</th><th>D</th><th>L</th>
+                    <th>GF</th><th>GA</th><th>PTS</th>
+                  </tr>
+                </thead>
+                <tbody id="spring-standings-body">
+                  <!-- Populated via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h3 style="font-size: 1.25rem; margin-top: 2rem;">Official Spring Team Rosters</h3>
+          <div class="teams-grid" id="spring-teams-container"></div>
+
+          <h3 style="font-size: 1.25rem; margin-top: 2.5rem;">Upcoming Match Fixtures</h3>
+          <div class="fixtures-grid" id="spring-fixtures-container"></div>
+        </div>
+
+        <!-- Tab 2: Fall Championship -->
+        <div class="hub-content-panel" id="tab-fallChampionship">
+          <div class="league-overview-card">
+            <div class="league-info-bar">
+              <div>
+                <h2 style="font-size: 1.5rem; margin-bottom: 0.25rem;">September Annual Soccer Tournament (Fall Classic)</h2>
+                <span class="league-dates">
+                  <i data-lucide="calendar" style="width: 14px; height: 14px;"></i> Annual September Tournament & Grand Community BBQ
+                </span>
+              </div>
+              <button class="btn btn-gold" onclick="openRegistrationModal('team')">
+                <i data-lucide="users" style="width: 16px; height: 16px;"></i> Register Team for Fall 2026
+              </button>
+            </div>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Featuring our six prestigious competitive clubs: <strong>Team Fire, Team Electric Egg, Team Bajra, Team Sea, Team Yomari, and Team Dalle Khursani</strong>.
+            </p>
+          </div>
+          <div class="teams-grid" id="fall-teams-container"></div>
+        </div>
+
+        <!-- Tab 3: Hall of Fame -->
+        <div class="hub-content-panel" id="tab-hallOfFame">
+          <div class="hall-grid" id="hall-of-fame-container"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="modals-placeholder"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

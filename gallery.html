@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Gallery | NJNFC - Moments & Memories</title>
+  <meta name="description" content="Browse authentic photos from NJNFC tournaments, championship victories, community BBQ celebrations, and youth training clinics.">
+  <link rel="icon" type="image/png" href="assets/icons/njnfc-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section-padding" style="padding-top: 5rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i data-lucide="image" style="width: 14px; height: 14px;"></i>
+            <span>Moments & Memories</span>
+          </div>
+          <h1 class="section-title">Club Photo Gallery</h1>
+          <p class="section-subtitle">
+            Relive key highlights: Champions League trophies, tournament MVPs, youth training clinics, and our famous post-game BBQ celebrations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding bg-secondary-theme">
+      <div class="container">
+        <div class="gallery-filter-tabs">
+          <button class="gallery-filter-btn active" data-filter="All">All Moments</button>
+          <button class="gallery-filter-btn" data-filter="Tournaments">Tournaments</button>
+          <button class="gallery-filter-btn" data-filter="Matches">Match Action</button>
+          <button class="gallery-filter-btn" data-filter="Community">Community & BBQ</button>
+          <button class="gallery-filter-btn" data-filter="Youth">Youth Clinics</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-container">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="modals-placeholder"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

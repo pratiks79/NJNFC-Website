@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | NJNFC - Get in Touch with the Club</title>
+  <meta name="description" content="Contact the NJNFC board, send a message, subscribe to our newsletter, or inquire about joining, volunteering, or sponsoring the club.">
+  <link rel="icon" type="image/png" href="assets/icons/njnfc-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section-padding" style="padding-top: 5rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i data-lucide="mail" style="width: 14px; height: 14px;"></i>
+            <span>Get in Touch</span>
+          </div>
+          <h1 class="section-title">Contact & Community Outreach</h1>
+          <p class="section-subtitle">
+            Whether you want to enter a team, suggest a friendly scrimmage, or support our non-profit mission, we'd love to hear from you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding bg-secondary-theme">
+      <div class="container">
+        <div class="contact-section-grid">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-card">
+            <h2>New Jersey Nepali Football Club</h2>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem;">
+              Connecting passionate soccer players and families across New Jersey, New York, and Pennsylvania.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="channel-details">
+                  <h3>Email Outreach</h3>
+                  <a href="mailto:nepalicommunitynj@njnfc.org">nepalicommunitynj@njnfc.org</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="channel-details">
+                  <h3>Official Grounds</h3>
+                  <p>Oak Ridge Park (Clark, NJ) & Ponderosa Farm Park (Scotch Plains, NJ)</p>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <i data-lucide="users"></i>
+                </div>
+                <div class="channel-details">
+                  <h3>Community Status</h3>
+                  <p>Registered Non-Profit Sports & Cultural Community</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Newsletter Box -->
+            <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle);">
+              <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Subscribe to the NJNFC Newsletter</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                Get weekly pickup field status updates, tournament announcements, and BBQ dates directly in your inbox.
+              </p>
+              <form id="newsletter-form" style="display: flex; gap: 0.5rem;">
+                <input type="email" class="form-input" placeholder="Enter your email address" required style="flex: 1;">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right: Direct Message Form -->
+          <div class="form-card">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Send Us a Message</h2>
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Bishnu Gurung" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-topic">Inquiry Subject</label>
+                <select id="contact-topic" class="form-select">
+                  <option value="General Inquiry">General Question / Membership</option>
+                  <option value="Upcoming Tournaments">Tournament Registration</option>
+                  <option value="Friendly Match Request">Friendly Match Challenge</option>
+                  <option value="Sponsorship & Donations">Sponsorship / Non-Profit Support</option>
+                  <option value="Volunteering">Volunteering / BBQ Chef Support</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Your Message *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="How can we help you or how would you like to get involved?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i data-lucide="send" style="width: 16px; height: 16px;"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="modals-placeholder"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
